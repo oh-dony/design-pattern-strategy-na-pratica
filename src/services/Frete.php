@@ -50,11 +50,6 @@ class Frete
         $this->servico = $servico;
     }
 
-    function setServico(FreteServico $servico)
-    {
-        $this->servico = $servico;
-    }
-
     function calcula(int $peso)
     {
         $valorTotal = $this->servico->calcula($peso);
